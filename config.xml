@@ -3,11 +3,11 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.llorenteycuenca.appbeta"
+        id        = "com.llorenteycuenca.mediatraining"
         version   = "1.0.0">
 
     <!-- Change app id (above), name, description, and author. App ID can be any reverse domain name, such as com.mycompany.app -->
-    <name>App Wordpress</name>
+    <name>Mediatraining Coca-Cola</name>
 
     <description>
         Esto es una aplicacion de prueba
