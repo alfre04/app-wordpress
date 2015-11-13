@@ -21,6 +21,21 @@
         
         document.addEventListener('deviceready', pgReady, false);
     </script>
+    
+    <script type="text/javascript" charset="utf-8">       
+        document.addEventListener('deviceready', onDeviceReady, false);
+        
+        /* Open */
+        function openDeviceBrowser (externalLinkToOpen){
+          window.open(externalLinkToOpen, '_system', 'location=no');
+        }
+        
+        function onDeviceReady() {
+          /* When this function is called, PhoneGap has been initialized and is ready to roll */
+           console.log('device ready!');
+           downloadFile();
+        }
+    </script>
 </head>
 <body>
 </body>
