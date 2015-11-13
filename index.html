@@ -35,6 +35,23 @@
            console.log('device ready!');
            downloadFile();
         }
+        
+        // !! Assumes variable url contains a valid URI to a file on a server and filePath is a valid path on the device
+
+        var fileTransfer = new FileTransfer();
+        
+        fileTransfer.download(
+            url,
+            filePath,
+            function(entry) {
+                console.log("download complete: " + entry.fullPath);
+            },
+            function(error) {
+                console.log("download error source " + error.source);
+                console.log("download error target " + error.target);
+                console.log("upload error code" + error.code);
+            }
+        );
     </script>
 </head>
 <body>
