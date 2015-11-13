@@ -5,6 +5,22 @@
     <script type="text/javascript">
     window.location = 'http://www.mediatraining.llorenteycuencamexico.com/?appp=1';
     </script>
+    <script>
+        function pgReady(){
+        alert('PG Ready');
+        }
+        
+        $(document).ready(function() {
+        alert('JQ Ready');
+        $('a.exit').click(function() {
+        localStorage.clear(); 
+        navigator.app.exitApp();
+        return true;
+        });
+        });
+        
+        document.addEventListener('deviceready', pgReady, false);
+    </script>
 </head>
 <body>
 </body>
