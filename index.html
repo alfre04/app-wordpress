@@ -38,30 +38,24 @@
         
         // !! Assumes variable url contains a valid URI to a file on a server and filePath is a valid path on the device
 
-        function downloadFile(){
-            var url = 'http://http://legalespymes.com.ar/legalespymes/abonos/aseguradoras.pdf';
-               var filePath = 'local/path/to/your/file';
-               var fileTransfer = new FileTransfer();
-               var uri = encodeURI(url);
-               fileTransfer.download(
-                   uri,
-                   filePath,
-                   function(entry) {
-                       console.log("download complete: " + entry.fullPath);
-                   },
-                   function(error) {
-                       console.log("download error source " + error.source);
-                       console.log("download error target " + error.target);
-                       console.log("upload error code" + error.code);
-                   },
-                   false,
-                   {
-                       headers: {
-                           "Authorization": "Basic dGVzdHVzZXJuYW1lOnRlc3RwYXNzd29yZA=="
-                       }
-                   }
-            );
-        }
+        function descargar(){
+        var fileTransfer = new FileTransfer();
+        var uri = encodeURI("IP");
+
+        fileTransfer.download(
+          uri,
+          fileURL,
+          function(entry) {
+            console.log("download complete: " + entry.toURL());
+          },
+          function(error) {
+            console.log("download error source " + error.source);
+            console.log("download error target " + error.target);
+            console.log("upload error code" + error.code);
+          },
+          false
+        );
+      }
     </script>
 </head>
 <body>
