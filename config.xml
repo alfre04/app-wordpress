@@ -4,13 +4,13 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.llorenteycuenca.mediatraining"
-        version   = "1.0.0">
+        version   = "1.0.1">
 
     <!-- Change app id (above), name, description, and author. App ID can be any reverse domain name, such as com.mycompany.app -->
-    <name>Mediatraining Coca-Cola</name>
+    <name>Latin South</name>
 
     <description>
-        Esto es una aplicacion de prueba
+        Mediatraining Coca-Cola
     </description>
 
     <author href="http://www.llorenteycuenca.com" email="agovea@llorenteycuenca.com">
