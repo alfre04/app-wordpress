@@ -57,7 +57,6 @@
     <!--preference name="SplashScreenDelay" value="10000" /-->
 
     <!-- No need to edit below this line -->
-    <plugin name="SplashScreen" value="org.apache.cordova.SplashScreen"/>
     
     <gap:splash src="splash.png"/>
 
