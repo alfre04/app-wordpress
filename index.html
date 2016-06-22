@@ -62,6 +62,11 @@
             timeout: 30,       // defaults to 0 (no timeout)
             fullscreen: true,  // defaults to false
         });
+        
+        //splashscreen
+        function onDeviceReady() {
+            navigator.splashscreen.show(); 
+        }
       }
     </script>
     

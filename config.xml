@@ -47,7 +47,7 @@
     <gap:plugin name="org.apache.cordova.vibration" version="0.3.11" />
 
     <!-- to show app faster, set autohide to true. iOS only -->
-    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="AutoHideSplashScreen" value="true" />
 
     <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="keyboardDisplayRequiresUserAction" value="false" />
@@ -57,6 +57,8 @@
     <!--preference name="SplashScreenDelay" value="10000" /-->
 
     <!-- No need to edit below this line -->
+    <plugin name="SplashScreen" value="org.apache.cordova.SplashScreen"/>
+    
     <gap:splash src="splash.png"/>
 
     <gap:splash src="res/screen/ios/screen-iphone-portrait.png" gap:platform="ios" width="320" height="480" />
