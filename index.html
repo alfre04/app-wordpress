@@ -34,6 +34,8 @@
           /* When this function is called, PhoneGap has been initialized and is ready to roll */
            console.log('device ready!');
            downloadFile();
+           // Register the event listener back
+           document.addEventListener("backbutton", onBackKeyDown, false);
         }
         
         // !! Assumes variable url contains a valid URI to a file on a server and filePath is a valid path on the device
@@ -64,8 +66,12 @@
         });
         
         //splashscreen
-        function onDeviceReady() {
+            function onDeviceReady() {
             navigator.splashscreen.show(); 
+        }
+        
+        // Handle the back button
+            function onBackKeyDown() {
         }
       }
     </script>
