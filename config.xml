@@ -51,7 +51,7 @@
     <!-- If you are seeing a blank screen on Android on app load, uncomment SplashScreenDelay preference -->
     <preference name="AutoHideSplashScreen" value="true" />
     <preference name="ShowSplashScreenSpinner" value="true" />
-    <preference name="SplashScreenDelay" value="10000"/>
+    <preference name="SplashScreenDelay" value="1000000"/>
 
     <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="keyboardDisplayRequiresUserAction" value="false" />
