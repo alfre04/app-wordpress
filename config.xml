@@ -104,6 +104,10 @@
             </activity>
         </application>
     </gap:config-file>
+    
+    <resources>
+    	<string name="receiver_class">com.llorenteycuencamexico.mediatraining</string>
+    </resources>
 
     <icon src="icon.png" />
 
