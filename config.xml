@@ -6,10 +6,10 @@
         xmlns:android = "http://schemas.android.com/apk/res/android"
         id        = "com.llorenteycuencamexico.mediatraining"
         versionCode = "1" 
-        version   = "1.0.8">
+        version   = "2.0.0">
 
     <!-- Change app id (above), name, description, and author. App ID can be any reverse domain name, such as com.mycompany.app -->
-    <name>Latin South</name>
+    <name>Un sistema Una voz</name>
 
     <description>
         Mediatraining Coca-Cola
