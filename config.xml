@@ -54,7 +54,8 @@
     <preference name="SplashScreenDelay" value="100000"/>
 
     <preference name="StatusBarBackgroundColor" value="#D32F2F" />
-    <!--<preference name="StatusBarOverlaysWebView" value="false" />-->
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    
     <preference name="keyboardDisplayRequiresUserAction" value="false" />
     <preference name="webviewbounce" value="false" />
 
