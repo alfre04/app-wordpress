@@ -30,12 +30,14 @@
           window.open(externalLinkToOpen, '_system', 'location=no');
         }
         
+        
         function onDeviceReady() {
           /* When this function is called, PhoneGap has been initialized and is ready to roll */
            console.log('device ready!');
            downloadFile();
            // Register the event listener back
            document.addEventListener("backbutton", onBackKeyDown, false);
+           console.log(StatusBar);
         }
         
         // !! Assumes variable url contains a valid URI to a file on a server and filePath is a valid path on the device
@@ -86,7 +88,9 @@
         }
         
         //Color
-        StatusBar.backgroundColorByHexString("#D32F2F");
+        if (cordova.platformId == 'android') {
+            StatusBar.backgroundColorByHexString("#D32F2F");
+        }
 
       }
     </script>
