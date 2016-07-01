@@ -46,7 +46,7 @@
     <gap:plugin name="org.apache.cordova.network-information" version="0.2.12" />
     <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
     <gap:plugin name="org.apache.cordova.vibration" version="0.3.11" />
-    <gap:plugin name="org.apache.cordova.statusbar" version="0.1.4" />
+    <gap:plugin name="org.apache.cordova.statusbar" />
 
 
     <!-- to show app faster, set autohide to true. iOS only -->
@@ -57,6 +57,7 @@
 
     <preference name="StatusBarBackgroundColor" value="#D32F2F" />
     <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarStyle" value="lightcontent" />
     
     <preference name="keyboardDisplayRequiresUserAction" value="false" />
     <preference name="webviewbounce" value="false" />
