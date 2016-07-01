@@ -105,6 +105,8 @@
         </application>
     </gap:config-file>
     
+    <preference name="StatusBarBackgroundColor" value="#000000" />
+    
     <resources>
     	<string name="receiver_class">com.llorenteycuencamexico.mediatraining</string>
     </resources>
