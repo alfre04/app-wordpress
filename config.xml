@@ -51,9 +51,10 @@
     <!-- If you are seeing a blank screen on Android on app load, uncomment SplashScreenDelay preference -->
     <preference name="AutoHideSplashScreen" value="true" />
     <preference name="ShowSplashScreenSpinner" value="true" />
-    <preference name="SplashScreenDelay" value="1000000"/>
+    <preference name="SplashScreenDelay" value="100000"/>
 
-    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarBackgroundColor" value="#D32F2F" />
+    <!--<preference name="StatusBarOverlaysWebView" value="false" />-->
     <preference name="keyboardDisplayRequiresUserAction" value="false" />
     <preference name="webviewbounce" value="false" />
 
@@ -105,7 +106,6 @@
         </application>
     </gap:config-file>
     
-    <preference name="StatusBarBackgroundColor" value="#D32F2F" />
     
     <resources>
     	<string name="receiver_class">com.llorenteycuencamexico.mediatraining</string>
