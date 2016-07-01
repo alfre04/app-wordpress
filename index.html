@@ -86,9 +86,8 @@
         }
         
         //Color
-        if (window.cordova && StatusBar)
-        {
-            StatusBar.backgroundColorByHexString('#D32F2F');
+        if (cordova.platformId == 'android') {
+            StatusBar.backgroundColorByHexString("#D32F2F");
         }
       }
     </script>
