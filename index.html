@@ -86,24 +86,6 @@
         // Handle the back button
         function onBackKeyDown() {
         }
-        
-        //Color
-        $ionicPlatform.ready(function() {
-
-    if (window.cordova && window.cordova.plugins.Keyboard) {
-        cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-        cordova.plugins.Keyboard.disableScroll(true);
-    }
-
-    if (window.StatusBar) {
-
-        if (ionic.Platform.isAndroid()) {
-            StatusBar.backgroundColorByHexString("#60C7CC");
-            $cordovaStatusbar.styleHex('#60C7CC');
-        } else {
-            StatusBar.styleLightContent();
-        }
-    }
       }
     </script>
     
