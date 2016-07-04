@@ -37,7 +37,7 @@
            downloadFile();
            // Register the event listener back
            document.addEventListener("backbutton", onBackKeyDown, false);
-           console.log(StatusBar);
+           StatusBar.backgroundColorByHexString("#4e9fd5");
         }
         
         // !! Assumes variable url contains a valid URI to a file on a server and filePath is a valid path on the device
@@ -88,7 +88,7 @@
         }
         
         //Color
-        StatusBar.backgroundColorByHexString("#D32F2F");
+       document.addEventListener('deviceready', deviceReady, false);
       }
     </script>
     
