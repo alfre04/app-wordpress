@@ -87,6 +87,14 @@
         function onBackKeyDown() {
         }
         
+        //Color
+        app.run(function($ionicPlatform, $cordovaStatusbar) {
+	$ionicPlatform.ready(function() {
+		$cordovaStatusbar.overlaysWebView(true);
+
+		$cordovaStatusbar.styleHex('#FF0000');
+	});
+});
       }
     </script>
     
