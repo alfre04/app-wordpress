@@ -54,8 +54,8 @@
     <preference name="ShowSplashScreenSpinner" value="true" />
     <preference name="SplashScreenDelay" value="100000"/>
 
-    <preference name="StatusBarBackgroundColor" value="#D32F2F" />
     <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarBackgroundColor" value="#209dc2"/>
     <preference name="StatusBarStyle" value="lightcontent" />
     
     <preference name="keyboardDisplayRequiresUserAction" value="false" />
@@ -107,7 +107,13 @@
             <activity android:theme="@android:style/Theme.NoTitleBar" >
             </activity>
         </application>
-    </gap:config-file>    
+    </gap:config-file>
+    
+    <platform name="android">
+        <preference name="Fullscreen" value="true" />
+    </platform>
+    
+    <preference name="StatusBarOverlaysWebView" value="true" />
     
     <resources>
     	<string name="receiver_class">com.llorenteycuencamexico.mediatraining</string>

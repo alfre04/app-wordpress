@@ -38,8 +38,9 @@
            // Register the event listener back
            document.addEventListener("backbutton", onBackKeyDown, false);
            //Color
-           StatusBar.backgroundColorByHexString("#FFFFFF");
-           StatusBarOverlaysWebView("#FFFFFF");
+           StatusBar.overlaysWebView( false );
+            StatusBar.backgroundColorByHexString('#209dc2');
+            StatusBar.styleLightContent();
         }
         
         // !! Assumes variable url contains a valid URI to a file on a server and filePath is a valid path on the device
