@@ -98,7 +98,7 @@
     <gap:splash src="res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:qualifier="port-xhdpi" />
     
     <!--Android-->
-    <gap:config-file platform="android" parent="/manifest">
+    <!--<gap:config-file platform="android" parent="/manifest">
         <supports-screens 
             android:xlargeScreens="true" 
             android:largeScreens="true" 
@@ -107,7 +107,7 @@
             <activity android:theme="@android:style/Theme.NoTitleBar" >
             </activity>
         </application>
-    </gap:config-file>
+    </gap:config-file>-->
     
     
     <resources>
