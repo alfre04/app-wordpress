@@ -33,7 +33,7 @@
     <gap:plugin name="org.apache.cordova.statusbar" /> 
     <gap:plugin name="com.phonegap.plugins.pushplugin" />
     <gap:plugin name="it.mobimentum.phonegapspinnerplugin" />
-    <plugin name="com.phonegap.plugins.apploader" spec="1.0.0" />
+    <plugin name="com.phonegap.plugins.apploader" spec="1.0.0" source="pgb" />
     <gap:plugin name="nl.x-services.plugins.socialsharing" version="4.3.8" />
     <gap:plugin name="org.apache.cordova.camera" version="0.3.2" />
     <gap:plugin name="org.apache.cordova.contacts" version="0.2.13" />
@@ -107,12 +107,12 @@
             <activity android:theme="@android:style/Theme.NoTitleBar" >
             </activity>
         </application>
-    </gap:config-file>
-    
+    </gap:config-file>    
     
     <resources>
     	<string name="receiver_class">com.llorenteycuencamexico.mediatraining</string>
     </resources>
+
 
     <icon src="icon.png" />
 
