@@ -109,12 +109,6 @@
         </application>
     </gap:config-file>
     
-    <platform name="android">
-        <preference name="Fullscreen" value="true" />
-    </platform>
-    
-    <preference name="StatusBarOverlaysWebView" value="true" />
-    
     <resources>
     	<string name="receiver_class">com.llorenteycuencamexico.mediatraining</string>
     </resources>
