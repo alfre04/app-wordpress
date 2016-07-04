@@ -118,5 +118,9 @@
 
     <content src="index.html" />
     <access origin="*" subdomains="true" />
+    
+    <feature name="StatusBar">
+        <param name="ios-package" value="CDVStatusBar" onload="true" />
+    </feature>
 
 </widget>
