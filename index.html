@@ -90,69 +90,6 @@
         // Handle the back button
         function onBackKeyDown() {
         }
-        
-        //Push
-        function register(os, token) {
-        var baseUrl;
-        baseUrl = 'http://www.mediatraining.llorenteycuencamexico.com';
-        if (!baseUrl) {
-            return $q.reject();
-        }
-        return $http({
-            method: 'POST',
-            url: baseUrl + '/register',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-            },
-            transformRequest: function(obj) {
-                var p, str;
-                str = [];
-                for (p in obj) {
-                    str.push(encodeURIComponent(p) + '=' + encodeURIComponent(obj[p]));
-                }
-                return str.join('&');
-            },
-            data: {
-                os: os,
-                token: token
-            }
-        });
-        };
-        $cordovaPush.register(androidConfig).then(function(result) {
-            $log.debug('android push notification registration success', result);
-        }, function(err) {
-            $log.error('android push notification registration error', err);
-        });
-        return $rootScope.$on('$cordovaPush:notificationReceived', function(event, notification) {
-            switch (notification.event) {
-                case 'registered':
-                    if (!notification.regid.length) {
-                        return;
-                    }
-                    $log.debug('com.llorenteycuencamexico.mediatraining', notification.regid);
-                    register('Android', notification.regid).success(function() {
-                        return $log.info('Push notif Token stored');
-                    });
-                    break;
-                case 'message':
-                    $log.debug('Push notif message', notification);
-                    if (notification.foreground) { // If your user is using the app
-                        // Do something like opening the Post within the app
-                        // You have access to
-                        // notification.payload.id which is the new Post ID
-                        // notification.payload.message which is the new Post Title
-                    } else { // If your user has clicked on the notification
-                        // Do something like opening the Post within the app
-                        // You have access to
-                        // notification.payload.id which is the new Post ID
-                        // notification.payload.message which is the new Post Title
-                    }
-                    break;
-                case 'error':
-                    $log.debug('Push notif error', notification);
-                    break;
-            }
-        });
       }
     </script>
     
