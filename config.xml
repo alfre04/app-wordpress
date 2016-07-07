@@ -5,8 +5,8 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
         id        = "com.llorenteycuencamexico.mediatraining"
-        versionCode = "2" 
-        version   = "2.0.2">
+        versionCode = "3" 
+        version   = "2.0.4">
 
     <!-- Change app id (above), name, description, and author. App ID can be any reverse domain name, such as com.mycompany.app -->
     <name>Un sistema Una voz</name>
