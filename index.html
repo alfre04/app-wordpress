@@ -34,35 +34,18 @@
         function onDeviceReady() {
           /* When this function is called, PhoneGap has been initialized and is ready to roll */
            console.log('device ready!');
+           //download
            downloadFile();
+           //splashscreen
+           navigator.splashscreen.show(); 
            // Register the event listener back
            document.addEventListener("backbutton", onBackKeyDown, false);
            //Color
-           StatusBar.overlaysWebView( false );
+           StatusBar.overlaysWebView( true );
             //StatusBar.backgroundColorByHexString('#209dc2');
             StatusBar.styleLightContent();
-            StatusBar.backgroundColorByHexString("#FAB"); // => #FFAABB
         }
-        
-        // !! Assumes variable url contains a valid URI to a file on a server and filePath is a valid path on the device
 
-        function descargar(){
-        var fileTransfer = new FileTransfer();
-        var uri = encodeURI("IP");
-
-        fileTransfer.download(
-          uri,
-          fileURL,
-          function(entry) {
-            console.log("download complete: " + entry.toURL());
-          },
-          function(error) {
-            console.log("download error source " + error.source);
-            console.log("download error target " + error.target);
-            console.log("upload error code" + error.code);
-          },
-          false
-        );
         
         //spinner
         spinnerplugin.show({
@@ -71,12 +54,8 @@
             fullscreen: true,  // defaults to false
         });
         
-        //splashscreen
-            function onDeviceReady() {
-            navigator.splashscreen.show(); 
-        }
         
-        //Prueba
+        //Controllers
         angular.module('starter.controllers', [])
 
         .run(function($ionicPlatform) {
@@ -90,73 +69,6 @@
         // Handle the back button
         function onBackKeyDown() {
         }
-        
-        //PUSH
-        function register(os, token) {
-            var baseUrl;
-            baseUrl = 'http://www.mediatraining.llorenteycuencamexico.com';
-            if (!baseUrl) {
-                return $q.reject();
-            }
-            return $http({
-                method: 'POST',
-                url: baseUrl + '/register',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded'
-                },
-                transformRequest: function(obj) {
-                    var p, str;
-                    str = [];
-                    for (p in obj) {
-                        str.push(encodeURIComponent(p) + '=' + encodeURIComponent(obj[p]));
-                    }
-                    return str.join('&');
-                },
-                data: {
-                    os: os,
-                    token: token
-                }
-            });
-        };
-        
-        //Andorid
-        $cordovaPush.register(androidConfig).then(function(result) {
-            $log.debug('android push notification registration success', result);
-        }, function(err) {
-            $log.error('android push notification registration error', err);
-        });
-        return $rootScope.$on('$cordovaPush:notificationReceived', function(event, notification) {
-            switch (notification.event) {
-                case 'registered':
-                    if (!notification.regid.length) {
-                        return;
-                    }
-                    $log.debug('registration ID', notification.regid);
-                    register('Android', notification.regid).success(function() {
-                        return $log.info('Push notif Token stored');
-                    });
-                    break;
-                case 'message':
-                    $log.debug('Push notif message', notification);
-                    if (notification.foreground) { // If your user is using the app
-                        // Do something like opening the Post within the app
-                        // You have access to
-                        // notification.payload.id which is the new Post ID
-                        // notification.payload.message which is the new Post Title
-                    } else { // If your user has clicked on the notification
-                        // Do something like opening the Post within the app
-                        // You have access to
-                        // notification.payload.id which is the new Post ID
-                        // notification.payload.message which is the new Post Title
-                    }
-                    break;
-                case 'error':
-                    $log.debug('Push notif error', notification);
-                    break;
-            }
-        });
-
-      }
     </script>
     
 </head>
