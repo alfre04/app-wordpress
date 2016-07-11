@@ -48,6 +48,7 @@
     <gap:plugin name="org.apache.cordova.network-information" version="0.2.12" />
     <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
     <gap:plugin name="org.apache.cordova.vibration" version="0.3.11" />
+    <gap:plugin name="org.apache.cordova-plugin-customurlscheme" />
 
     <!-- to show app faster, set autohide to true. iOS only -->
     <!-- If you are seeing a blank screen on Android on app load, uncomment SplashScreenDelay preference -->
@@ -111,10 +112,12 @@
         </application>
     </gap:config-file>
     
-    <gap:url-scheme name="com.llorenteycuencamexico.mediatraining" role="None">
-      <scheme>pgbr</scheme>
-      <scheme>pgbw</scheme>
-    </gap:url-scheme>
+    <intent-filter>
+        <data android:scheme="com.llorenteycuencamexico.mediatraining"/>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+    </intent-filter>
     
     <resources>
     	<string name="receiver_class">com.llorenteycuencamexico.mediatraining</string>
