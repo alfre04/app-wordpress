@@ -112,12 +112,18 @@
         </application>
     </gap:config-file>
     
+    <plugin name="LaunchMyApp" value="nl.xservices.plugins.LaunchMyApp"/>
+    
     <intent-filter>
         <data android:scheme="com.llorenteycuencamexico.mediatraining"/>
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
     </intent-filter>
+    
+    <gap:plugin name="cordova-plugin-customurlscheme" source="npm">
+      <param name="com.llorenteycuencamexico.mediatraining" value="mycoolapp" />
+    </gap:plugin>
     
     <resources>
     	<string name="receiver_class">com.llorenteycuencamexico.mediatraining</string>
