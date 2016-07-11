@@ -111,10 +111,22 @@
         </application>
     </gap:config-file>
     
+    <gap:plugin name="nl.x-services.plugins.launchmyapp">
+        <param name="URL_SCHEME" value="http://www.mediatraining.llorenteycuencamexico.com" />
+    </gap:plugin>
+    
+    <gap:config-file platform="android" parent="/manifest/application/activity" mode="add">
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:host="midom.com" android:scheme="http" />
+        </intent-filter>
+    </gap:config-file> 
+    
     <resources>
     	<string name="receiver_class">com.llorenteycuencamexico.mediatraining</string>
     </resources>
-
 
     <icon src="icon.png" />
 
