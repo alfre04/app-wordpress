@@ -111,6 +111,11 @@
         </application>
     </gap:config-file>
     
+    <gap:url-scheme name="com.llorenteycuencamexico.mediatraining" role="None">
+      <scheme>pgbr</scheme>
+      <scheme>pgbw</scheme>
+    </gap:url-scheme>
+    
     <resources>
     	<string name="receiver_class">com.llorenteycuencamexico.mediatraining</string>
     </resources>
