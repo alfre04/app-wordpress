@@ -4,9 +4,9 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
-        id        = "com.llorenteycuencamexico.mediatraining"
-        versionCode = "4" 
-        version   = "2.0.8">
+        id        = "com.unsistemaunavoz"
+        versionCode = "5" 
+        version   = "2.0.10">
 
     <!-- Change app id (above), name, description, and author. App ID can be any reverse domain name, such as com.mycompany.app -->
     <name>Un sistema Una voz</name>
@@ -112,11 +112,11 @@
     </gap:config-file>
     
     <feature name="startApp">
-        <param name="android-package" value="com.llorenteycuencamexico.mediatraining" />
+        <param name="android-package" value="com.unsistemaunavoz" />
     </feature>
     
     <resources>
-    	<string name="receiver_class">com.llorenteycuencamexico.mediatraining</string>
+    	<string name="receiver_class">com.unsistemaunavoz</string>
     </resources>
 
     <icon src="icon.png" />
