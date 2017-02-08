@@ -32,7 +32,7 @@
     <!-- You can comment out features you aren't using -->
     <!--<gap:plugin name="com.phonegap.plugin.statusbar" version="1.1.0" />-->
     <!--<gap:plugin name="org.apache.cordova.statusbar" /> -->
-    <plugin name="org.apache.cordova.statusbar" spec="0.1.4" source="pgb" />
+    <!--<plugin name="org.apache.cordova.statusbar" spec="0.1.4" source="pgb" />-->
     <gap:plugin name="com.phonegap.plugins.pushplugin" />
     <gap:plugin name="it.mobimentum.phonegapspinnerplugin" />
     <plugin name="com.phonegap.plugins.apploader" spec="1.0.0" source="pgb" />
