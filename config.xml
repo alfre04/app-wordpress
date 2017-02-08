@@ -3,9 +3,12 @@
     xmlns:gap   = "http://phonegap.com/ns/1.0"
     id        = "com.unsistemaunavoz"
     versionCode = "10"
-    version     = "1.0.0" >
+    version     = "1.0.0">
 
 <!-- versionCode is optional and Android only -->
+
+    <access origin="*"/>
+    <allow-navigation href="*" />
 
   <name>PhoneGap Example</name>
 
