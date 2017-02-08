@@ -6,7 +6,7 @@
         xmlns:android = "http://schemas.android.com/apk/res/android"
         id        = "com.unsistemaunavoz"
         versionCode = "5" 
-        version   = "2.0.10">
+        version   = "2.1.0">
 
     <!-- Change app id (above), name, description, and author. App ID can be any reverse domain name, such as com.mycompany.app -->
     <name>Un sistema Una voz</name>
