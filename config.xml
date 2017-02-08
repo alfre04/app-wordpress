@@ -18,6 +18,8 @@
     <author href="http://www.llorenteycuenca.com" email="vvalverde@llorenteycuenca.com">
         Victor Valverde
     </author>
+    
+    <allow-navigation href="http://*/*" />
 
     <!--<preference name="phonegap-version" value="3.7.0" />-->
     <preference name="phonegap-version" value="cli-6.5.0" />
@@ -28,8 +30,6 @@
     <gap:config-file platform="ios" parent="CFBundleShortVersionString"><string>100</string></gap:config-file>
     <gap:platform name="ios" />
     <gap:platform name="android" />
-    <access origin="*" />
-    <allow-navigation href="*" />
     
     <!-- You can comment out features you aren't using -->
     <!--<gap:plugin name="org.apache.cordova.statusbar" /> -->
