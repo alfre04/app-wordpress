@@ -27,7 +27,7 @@
     <!-- You can comment out features you aren't using -->
     <gap:plugin name="cordova-plugin-statusbar" source="npm" spec="2.1.3" />
     <preference name="StatusBarOverlaysWebView" value="false" />
-    <preference name="StatusBarBackgroundColor" value="#000000" />
+    <preference name="StatusBarBackgroundColor" value="#ffffff" />
     <preference name="StatusBarStyle" value="lightcontent" />
 
     <gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
