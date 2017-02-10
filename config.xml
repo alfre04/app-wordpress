@@ -68,7 +68,7 @@
 
     <!-- If you are seeing a blank screen on Android on app load, uncomment SplashScreenDelay preference -->
     <preference name="ShowSplashScreenSpinner" value="true" />
-    <preference name="SplashScreenDelay" value="100000"/>
+    <preference name="SplashScreenDelay" value="1000"/>
 
     <!-- No need to edit below this line -->
     <gap:splash src="splash.png"/>
