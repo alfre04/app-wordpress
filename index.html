@@ -18,6 +18,49 @@
     <script type="text/javascript" src="init.js"></script>
 
 
+    <script type="text/javascript">
+        function writeFile() {
+            if (sessionStorage.platform.toLowerCase() == "android") {
+                window.resolveLocalFileSystemURL(cordova.file.externalRootDirectory, onFileSystemSuccess, onError);
+            } else {
+                window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onFileSystemSuccess, onError);
+            }
+
+        }    
+
+        function onError(e) {
+            alert("onError");
+        };
+
+        function onFileSystemSuccess(fileSystem) {
+            var entry = "";
+            if (sessionStorage.platform.toLowerCase() == "android") {
+                entry = fileSystem;
+            } else {
+                entry = fileSystem.root;
+            }
+            entry.getDirectory("Folder_Name", {
+                create: true,
+                exclusive: false
+            }, onGetDirectorySuccess, onGetDirectoryFail);
+        };
+
+        function onGetDirectorySuccess(dir) {
+            dir.getFile(filename, {
+                create: true,
+                exclusive: false
+            }, gotFileEntry, errorHandler);
+        };
+
+        function gotFileEntry(fileEntry) {
+            // logic to write file in respective directory
+        };
+
+        function errorHandler(e) {
+            // handle error
+        }
+    </script>
+    
     <!--<script type="text/javascript">
         window.location.href = "http://unsistemaunavoz.com/?appp=1";
     </script>-->
