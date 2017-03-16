@@ -139,35 +139,14 @@
 </head>
 <body>
     
-    <!--<div id="online" data-iframe="https://unsistemaunavoz.com/?appp=2">
+    <div id="online" data-iframe="https://unsistemaunavoz.com/?appp=2">
             the iframe is dynamically created here after we check offline/online connection
         </div>
         <div id="offline-footer">
             <div id="offline-msg">Lost connection, functionality is limited.</div>
             <button class="button button-positive" id="go-offline">Offline Mode</button>
             <button class="button button-positive" id="close-offline">Close</button>
-        </div>-->
-    
-        <ul id="app"></div>
-
-  <script>
-  jQuery(document).ready(function($) {
-    $.get( "https://unsistemaunavoz.com/wp-json/wp/v2/posts", function( data ) {
-        $.each( data, function( i, val ) {
-            $( "#app" ).append(
-                '<li>' + 
-                    '<h3>' +
-                    val.title.rendered + 
-                    '</h3>' +
-                    '<p>' +
-                    val.excerpt.rendered +
-                    '</p>' +
-                '</li>'
-            );
-        });
-    });
-  });
-  </script>
+        </div>
 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript">
